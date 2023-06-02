@@ -30,6 +30,12 @@ O módulo Cryptography é uma biblioteca Python para criptografia. Ele oferece s
 1. Baixe o arquivo app.py junto com seu código
 2. Adicionar as libs necessárias para o seu projeto no arquivo [requirements.txt](./requirements.txt)
 3. Estou usando Linux Ubuntu 22.04.2 LTS
+4. A versão funcional do Python é a 3.8
+5. Ative o ambiente virtual dentro do diretório /bate-papo
+
+~~~
+source venv-3.8/bin/activate
+~~~ 
 
 ## Testar Local
 
