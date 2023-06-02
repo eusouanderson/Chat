@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bate Papo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Incluindo arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" defer>
+    <!-- Incluindo os arquivos JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Bate Papo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Pagina Inicial<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cadastro">Cadastro</a>
+        </li>
+        <li class="nav-item dropdown">
+          </a>
+        </li>
+    </div>
+  </nav>
+    <header >
+        <h1>Login</h1>
+
+      <main>
+        <ul id="messages"></ul>
+          <form action="/logar" method="post">
+            
+              <div class="form-group">
+                  <label for="username">Nome de Usuario</label>
+                  <input type="text" class="form-control" name="username" id="username" placeholder="Digite seu nome de usuario" required>
+              </div>
+              <div class="form-group">
+                  <label for="password">Senha</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Digite a sua senha" required>
+              </div>
+              <button class="btn btn-info" type="submit" value="Logar" >Logar</button>
+          </form>
+              <div id="message-container"></div>
+      </main>
+    </header>
+            <footer>
+            </footer>
+</body>
+</html>

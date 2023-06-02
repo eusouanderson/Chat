@@ -1,0 +1,193 @@
+:root{
+
+    --salmão : #F58B78;
+    --rosa : #D46CCB;
+    --azul-escuro : #6C9FD4;
+    --roxo : #6C9FD4;
+    --verde-aqua:#81F7D8;
+    --preto : #000000;
+    --branco :#DBDADB;
+
+}
+nav{
+  background: linear-gradient(15deg, var(--preto), var(--rosa), var(--preto));
+  color: var(--branco);
+}
+*
+{
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--preto);
+
+}
+
+header
+{   
+    text-align: center;
+    padding: 100px;
+    border-radius: 1%;
+    
+}
+.main
+{
+    align-items: center;
+    border-radius: 1%;
+    background: var(--azul-escuro);
+    padding: 50px;
+    width: 200px;
+    margin: auto;
+}
+input{
+    margin: 10px;
+    width: 30%;
+    height: 30px;
+    background-color: white;
+    border-color: #6C9FD4;
+    border-radius: 2rem; margin: 0.25rem;
+
+}
+html{
+  background: linear-gradient(15deg, var(--preto), var(--rosa), var(--preto));
+}
+footer {
+  color: #81F7D8;
+  padding: 50px 0;
+}
+
+.container {
+    display: flex;
+}
+    
+.li {
+    flex-basis: 50%;
+    position: static;
+  }
+.coluna2 {
+    flex-basis: 50%;
+    position: static;
+  }
+  
+.chat {
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+  }
+  .mensagem {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .usuario {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .texto {
+    flex: 1;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  body { 
+    margin: 0;
+    padding-bottom: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+  }
+          
+  #form { 
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.25rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 3rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px); 
+  }
+  #input { 
+    border: none;
+    padding: 0 1rem;
+    flex-grow: 1;
+    border-radius: 2rem;
+    margin: 0.25rem;
+  }
+  
+  #input:focus { 
+    outline: none; 
+  }
+  
+  #form > button { 
+    background: #333;
+    border: none;
+    padding: 0 1rem;
+    margin: 0.25rem;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+  }
+
+  #messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    
+  }
+  
+  #messages > li { 
+    border-radius: 4rem;
+    margin: 0.25rem;
+    background: #1d1a19;
+    font-family: 'open sans';
+    font-size: 1.85em;
+    line-height: 1.6em;  
+    width: 300px;
+    height: auto;
+    color: rgb(231, 226, 231);
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: auto;
+  }
+
+  #messages > li:nth-child(odd) { 
+    border-radius: 4rem;
+    margin: 0.25rem;
+    background: #7e57c2;
+    font-family: 'open sans';
+    font-size: 1.85em;
+    line-height: 1.6em;  
+    width: 300px;
+    height: auto;
+    color: rgb(248, 242, 248);
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+  }
+
+.balao2:after{ /*Triangulo*/
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-bottom: 20px solid #7e57c2;
+    top: -20px; /*localização. Experimente alterar para 'bottom'*/
+    left: 20%;
+}
+
+.assinatura{
+  font-family: 'arial';
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #999;
+  
+}
+
+.assinatura a {
+  color: #7e57c2;
+  font-weight: 800;
+}
