@@ -1,7 +1,7 @@
 
 # Bate Papo
 
-Com intuito de aprender mais sobre o flamworks Flask e a ferramenta Socket.io , criei esse bate papo em tempo real , que funciona em rede.
+Com intuito de aprender mais sobre o flamworke Flask e a ferramenta Socket.io , criei esse bate papo em tempo real , que funciona em rede.
 
 
 ### Flask
